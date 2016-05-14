@@ -6,5 +6,5 @@ var cache = new Cache({key: 'alpha1'});
 alpha.pipe(cache);
 
 cache.on('finish', function() {
-	console.log('cache store:', Cache.store);
+	console.log('cache store:', Cache.store['alpha1'].toString());
 });
